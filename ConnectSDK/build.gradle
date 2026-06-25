@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.connectsdk'
+    compileSdk 36
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 35
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES',
+                         'META-INF/LICENSE',
+                         'META-INF/LICENSE.txt',
+                         'META-INF/license.txt',
+                         'META-INF/NOTICE',
+                         'META-INF/NOTICE.txt',
+                         'META-INF/notice.txt',
+                         'META-INF/ASL2.0',
+                         'META-INF/*.kotlin_module']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.gms:play-services-cast-framework:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.googlecode.plist:dd-plist:1.23'
+    implementation 'com.nimbusds:srp6a:2.1.0'
+    implementation 'net.i2p.crypto:eddsa:0.3.0'
+}
