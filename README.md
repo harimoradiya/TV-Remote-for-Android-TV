@@ -43,9 +43,10 @@ The goal is simple: pick up your phone, connect to your TV, and control it natur
 ## Screenshots
 
 <p align="center">
+  <img src="docs/images/discovery.png" width="260" alt="TV discovery screen" />
   <img src="docs/images/home.png" width="260" alt="Home screen" />
   <img src="docs/images/remote.png" width="260" alt="Remote control screen" />
-  <img src="docs/images/discovery.png" width="260" alt="TV discovery screen" />
+ 
 </p>
 
 ---
