@@ -19,6 +19,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Link
@@ -175,6 +176,25 @@ fun TipsSupportScreen(
                         title = "Version",
                         desc = BuildConfig.VERSION_NAME,
                         icon = Icons.Filled.Info
+                    )
+                }
+                item {
+                    SettingItemRow(
+                        title = "Source Code",
+                        desc = "View source code on GitHub",
+                        icon = Icons.Filled.Code,
+                        onClick = {
+                            try {
+                                context.startActivity(
+                                    Intent(
+                                        Intent.ACTION_VIEW,
+                                        Uri.parse("https://github.com/harimoradiya/TV-Remote-for-Android-TV")
+                                    )
+                                )
+                            } catch (e: Exception) {
+                                // ignore
+                            }
+                        }
                     )
                 }
             }
