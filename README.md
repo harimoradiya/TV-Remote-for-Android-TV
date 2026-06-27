@@ -4,10 +4,17 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![App Model](https://img.shields.io/badge/App--Model-100%25_Free-brightgreen.svg)]()
 [![Ads](https://img.shields.io/badge/Ads-None-brightgreen.svg)]()
+[![Google Play](https://img.shields.io/badge/Google_Play-Get_it_on-green?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.hari.androidtvremote)
 
 A fast, privacy-focused, and completely free Android TV remote control app that lets users control Android TV and compatible Smart TVs over the same Wi-Fi network.
 
 No ads. No subscriptions. No premium locks. Just a simple and reliable TV remote experience.
+
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.hari.androidtvremote">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200" alt="Get it on Google Play" />
+  </a>
+</p>
 
 ---
 
